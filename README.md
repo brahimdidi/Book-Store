@@ -1,49 +1,81 @@
-# Getting Started with Create React App
+# BookStore CMS
 
-Book-Store
-The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I will create an MVP version of it that allows the user to: Display a list of books. Add a book. Remove a selected book.
+About
+The Bookstore is a simple website created with react that allows you to:
 
-## Available Scripts
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
-In the project directory, you can run:
+## Screen Shots
 
-### `npm start`
+> Coming Soon.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With &hearts;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTML
+- CSS
+- JavaScript
+- ReactJS.
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-## Mini Demo
-not available yet
-
-## Screenshot
-not available yet
-
-Additional description about the project and its features.
-
-## Built With
-Major languages: Html Css JS Frameworks: React Technologies used : Visual Studio Code
+- [live](https://brahimdidi.github.io/bookstore/)
 
 ## Getting Started
-To get a local copy up and running follow these simple example steps.
 
-clone the repo using this command : git clone git@github.com:brahimdidi/math-magic.git opent the project with your favourite code editor(vscode, athom...) run npm install run npm start
+To get a local copy up and running follow these setup steps.
 
-## Prerequisites
-A text editor(preferably Visual Studio Code) Install Git Node Usage Clone this repository git clone git@github.com:brahimdidi/math-magic.git cd math-magic Run project npm start Open page in browser $ open dist/index.html Author bust_in_silhouette Brahim
+**Setup**
 
-## GitHub:
- @brahimdidi Contributions, issues, and feature requests are welcome!
+- Open terminal and clone the project: `git clone git@github.com:brahimdidi/bookstore`
+- cd into the directory `bookstore-cms`
 
-Feel free to check the issues page.
+**Prerequisites**
 
-Show your support Give a star if you like this project!
+- You need to have `node.js` installed in your system
 
-memo License This project is MIT licensed.
+**Install**
+
+- On your terminal run :
+
+```sh
+  npm install
+```
+
+- In case you run into any errors please raise an [issue](https://github.com/brahimdidi/bookstore/issues).
+
+**Usage**
+
+- To run the application:
+
+```sh
+npm run start
+
+```
+
+## Authors
+
+👤 **Brahim didi**
+
+- GitHub: [@brahimdidi](https://github.com/brahimdidi)
+- Twitter: [@brahimdidi](https://twitter.com/brahimdidi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/brahimdidi/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Microverse program
+- My standup team
+- Microverse team
+- My family's support
