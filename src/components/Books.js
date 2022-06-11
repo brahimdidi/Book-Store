@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Book from "./Book";
-import AddBook from "./AddBook";
-import './CSS/Books.css'
-const Books = () => {
-    return (
+import Book from './Book';
+import AddBook from './AddBook';
+import './CSS/Books.css';
+
+const Books = () => (
   <section className="books">
     <div className="books-list flex flex-column">
       <Book />
@@ -13,7 +13,6 @@ const Books = () => {
     </div>
     <AddBook />
   </section>
-    )
-}
+);
 
 export default Books;
