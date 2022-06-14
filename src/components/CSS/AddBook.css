@@ -8,7 +8,6 @@
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: fantasy;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -42,6 +41,6 @@
   color: #fff;
 }
 
-.form label input::placeholder {
+.form input::placeholder {
   padding-inline-start: 4px;
 }
