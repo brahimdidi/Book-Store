@@ -32,3 +32,21 @@ body {
   color: white;
   cursor: pointer;
 }
+
+/* fonts family */
+.book-categories,
+.completed,
+.bookstore-cms,
+.add-new-book,
+.percentage-result,
+.nav-ul > li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.book-title,
+.book-author,
+.book-buttons > button,
+.current-chapter,
+.chapter {
+  font-family: 'Roboto Slab', serif;
+}
