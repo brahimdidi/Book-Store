@@ -1,26 +1,32 @@
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const bookReducer = (books = [], action) => {
+export const ID = () => `_${Math.random().toString(36).substr(2, 9)}`;
+
+const initialState = [
+  { title: 'the killer', author: 'Amir', id: ID() },
+  { title: ' God Empire', author: 'vito', id: ID() },
+  { title: ' Meta modernity', author: 'Myself', id: ID() },
+];
+const bookReducer = (stateBooks = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [
-        ...books,
-        { id: 1, description: action.payload.description },
-      ];
+      return [...stateBooks, action.payload];
     case REMOVE_BOOK:
-      return books.filter((b) => b.id !== action.payload.id);
+      return stateBooks.filter((b) => b.id !== action.payload.id);
 
-    default: return books;
+    default: return stateBooks;
   }
 };
 
-export const addBook = () => ({
+export const addBook = (book) => ({
   type: 'ADD_BOOK',
+  payload: book,
 });
 
-export const removeBook = () => ({
+export const removeBook = (book) => ({
   type: 'REMOVE_BOOK',
+  payload: book,
 });
 
 export default bookReducer;
