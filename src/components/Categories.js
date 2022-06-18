@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { checkStatus } from '../store/categories/cateRedux';
+import { checkStatus } from '../store/categories/cateSlice';
 
 const Categories = () => {
   const dispatch = useDispatch();
