@@ -10,7 +10,7 @@
 
 # production
 /build
-/src/store/books/bookSlice.js
+/src/store/books/bookRedux.js
 
 # misc
 .DS_Store
