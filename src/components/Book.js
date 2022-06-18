@@ -1,28 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../store/books/bookRedux';
+import { removeBook } from '../store/books/bookSlice';
 
 const Book = () => {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
-  const handleClick = (b) => {
-    dispatch(removeBook(b));
+  const handleClick = (id) => {
+    dispatch(removeBook(id));
   };
 
-  useEffect(() => {
-  }, []);
   return (
     <div className="books-list flex flex-column">
       { books.map((book) => (
         <div className="book-container flex" key={book.id} id={book.id}>
           <section className="book-infos flex flex-column">
-            <span className="book-categories">categories</span>
+            <span className="book-categories">{book.category}</span>
             <span className="book-title">{book.title}</span>
             <span className="book-author">{book.author}</span>
             <div className="book-buttons">
               <button type="button" className="comment">comment</button>
-              <button type="button" className="remove" onClick={() => handleClick(book)}>remove</button>
+              <button type="button" className="remove" onClick={() => handleClick(book.id)}>remove</button>
               <button type="button" className="edit">edit</button>
             </div>
           </section>
