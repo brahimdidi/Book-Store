@@ -1,37 +1,33 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook, ID } from '../store/books/bookRedux';
+import { addBook } from '../store/books/bookSlice';
 import './CSS/AddBook.css';
 
 const AddBook = () => {
   const [book, setBook] = useState({
     title: '',
     author: '',
+    category: '',
   });
 
-  const { title, author } = book;
+  const { title, author, category } = book;
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const newBook = {
-      id: ID(),
-      title,
-      author,
-    };
-
-    dispatch(addBook(newBook));
+    dispatch(addBook(book));
     setBook({
       title: '',
       author: '',
+      category: '',
     });
   };
 
-  const handleChange = (e) => {
+  const handleChange = ({ target }) => {
+    const { name, value } = target;
     setBook({
       ...book,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   };
 
@@ -52,6 +48,14 @@ const AddBook = () => {
           placeholder="author"
           value={author}
           name="author"
+          onChange={handleChange}
+          required
+        />
+        <input
+          className="category"
+          placeholder="category"
+          value={category}
+          name="category"
           onChange={handleChange}
           required
         />
